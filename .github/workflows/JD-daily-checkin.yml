@@ -29,6 +29,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run weather Report
       run: |
-        python daily_sign.py
+        python JD-daily-checkin.py
       env:
         JD_COOKIE: ${{ secrets.JD_COOKIE }}
